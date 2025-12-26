@@ -734,7 +734,6 @@ Unidades conectadas (discos y unidades externas)
 ```bash
 lsblk # Datos crudos
 lsblk -o NAME,SIZE,FSTYPE,MOUNTPOINT,LABEL,MODEL,FSUSED,FSAVAIL #tabla con labels
-
 ```
 Fecha y hora
 ```bash
@@ -744,4 +743,8 @@ Detectar en que puerto esta conectado un USB o Microcontrolador
 ```bash
 watch -n 1 ls /dev/ttyUSB* /dev/ttyACM*
 #para detener ctrl+C
+```
+Buscar un archivo
+```bash
+find /ruta/de/inicio -name "miarchivo.txt"
 ```
