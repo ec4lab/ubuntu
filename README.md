@@ -717,10 +717,16 @@ chmod -R 770 Documentos/ARCHIVO.txt
 #       6 (4+2+0), puede leer y escribir
 #       7 (4+2+1), puede leer,escribir y ejecutar
 ```
-acceso ssh:
+Acceso ssh:
 ```bash
 ssh usuario@IP_O_DOMINIO # puerto 22
 ssh usuario@IP_O_DOMINIO -6254 # puerto especial
+```
+Copiar una carpeta desde el servidor ssh:
+```bash
+scp -r usuario@IP_O_DOMINIO:/ruta/remota/carpeta /ruta/local/ #Copia Rápida
+rsync -avz --progress usuario@IP_O_DOMINIO:/ruta/remota/carpeta /ruta/local/ # Copia solo cambios
+rsync -avz --delete usuario@IP_O_DOMINIO:/ruta/remota/carpeta /ruta/local/ #Espejo, también borra.
 ```
 Reiniciar red
 ```bash
