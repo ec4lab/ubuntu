@@ -266,6 +266,42 @@ ffmpeg -i input_video.mp4 -vf "fps=10,scale='if(gte(iw,ih),400,-1)':'if(gte(iw,i
 # Aplica los ajustes de resolución y fotogramas por segundo nuevamente para asegurarse de que el GIF final cumpla con los parámetros establecidos.
 ```
 
+#### Operaciones con Videos en ffmpeg
+
+Convertir a MP4
+
+```bash
+ffmpeg -i input.avi -c:v libx264 -c:a aac output.mp4
+```
+
+Para varios archivos (batch)
+
+```bash
+for f in *.avi; do
+  ffmpeg -i "$f" -c:v libx264 -c:a aac "${f%.avi}.mp4"
+done
+```
+
+Extraer audio a MP3
+
+```bash
+ffmpeg -i input.mp4 -q:a 2 -map a output.mp3
+```
+
+Extraer audio con calidad fija
+
+```bash
+ffmpeg -i input.mp4 -vn -b:a 192k output.mp3
+```
+
+Para varios archivos
+
+```bash
+for f in *.mp4; do
+  ffmpeg -i "$f" -q:a 2 -map a "${f%.mp4}.mp3"
+done
+```
+
 ### Instalar FreeCad en Ubuntu
 
 Simplemente instalar desde la tienda de aplicaciones
