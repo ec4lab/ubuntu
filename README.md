@@ -2,17 +2,17 @@
 
 Esta es mi experiencia instalando y usando ubuntu, lo uso de manera múy básica, si tienes alguna sugerencia o aplicación que consideras que este documento debería tener no dudes en [contactarme](ec4lab@gmail.com)
 
-Si quieres profundizar un poco más te recomiendo este [blog](https://www.freecodecamp.org/news/learn-linux-for-beginners-book-basic-to-advanced/).
+Si quieres profundizar un poco más se recomienda leer este [blog](https://www.freecodecamp.org/news/learn-linux-for-beginners-book-basic-to-advanced/).
 
 ## Instalación
 
-Si vienes de windows, mi recomendación es que no lo reemplaces, puedes realizar una instalación junto a windows.
+Si tienes windows, la recomendación es que no lo reemplaces, se puede realizar una instalación junto a windows, y elegir con que S.O. trabajar cada vez que se reinicia la PC.
 
-### Descarga la imagen
+### Descargar la imagen
 
-Descargar la imagen ISO de la web de [Ubuntu](https://ubuntu.com/download/desktop), yo prefiero 0.4LTS, tienen más soporte,pero si quieres puedes probar otras.  
-También existen diferentes [Flavors](https://ubuntu.com/desktop/flavors), que sobre la misma base de ubuntu tienen herramientas adicionales o diferentes entornos de escritorio según necesites.
-Si es la primera vez, te recomiendo iniciar con el ubuntu clásico y luego, si quieres, vas experimentando las demás.
+Descargar la imagen ISO de la web de [Ubuntu](https://ubuntu.com/download/desktop), las versiones 0.4LTS, (Long Term Support) tienen más soporte,pero existe otras para probar.  
+También existen diferentes [Flavors](https://ubuntu.com/desktop/flavors), que sobre la misma base de ubuntu tienen herramientas adicionales o diferentes entornos de escritorio.
+Si es la primera vez, se recomiendo iniciar con el ubuntu clásico y luego, si se quiere, ir experimentando las demás.
 
 ### Crear un disco de arranque
 
@@ -26,30 +26,30 @@ Copia la imagen descargada dentro del USB ventoy
 
 ### Instalar Ubuntu
 
-Con la imagen dentro del usb ventoy, reinicia la pc y asegúrate que bootee desde el usb, esto cambia para cada máquina deberás googlear para la tuya en particular, en algunas es presionando `F8` o `F10` o ingresando directamente al menú de la bios con `supr` o `F2` y cambiando el orden de prioridades del booteo.
+Con la imagen dentro del usb ventoy, reiniciar la pc y asegurarse que bootee desde el usb, esto cambia para cada máquina en particular, en algunas es presionando `F8` o `F10` o ingresando directamente al menú de la bios con `Supr` o `F2` y cambiando el orden de prioridades del booteo.
 
 ### Durante la instalación
 
 Sigue las pantallas y coloca tus preferencias, como usuario, nombre del equipo y contraseña, uso horario, idioma de la instalación y teclado.  
 
-En un momento te va a consultar si quieres borrar todo el disco o instalarlo junto a windows, yo uso esa opción, ahi puedes decidir que espacio dejas a windows y a ubuntu.  
+En un momento va a consultar si se quiere borrar todo el disco o instalarlo junto a windows, que es la opción que estoy utilizando, se puede elegir que espacio se deja a windows y a ubuntu.  
 
-Hay opciones avanzadas con la posibilidad de modificar y crear nuevas particiones, si no sabes lo que estás haciendo te recomiendo no jugar con esa sección.  
+Hay opciones avanzadas con la posibilidad de modificar y crear nuevas particiones, si no sabes lo que estás haciendo, se recomienda no jugar con esa sección.  
 
-Por último para no tener problemas de compatibilidad te aconsejo:
+Por último, unos consejos para no tener problemas de compatibilidad:
 
-* Instalar version completa.
-* Con software y driver de terceros.
+* [x] Instalar version completa.
+* [x] Con software y driver de terceros.
 
 ### Cambiar el tamaño de particiones
 
-Si te equivocaste en los tamaños o quieres modificarlos, reinicia la pc y bootea nuevamente desde el usb, pero en lugar de seleccionar <kbd>install ubuntu</kbd> selecciona <kbd>Try Ubuntu</kbd>, ya en el escritorio, abre la aplicación `Gparted`y allí puedes modificar los tamaños o incluso eliminar las particiones **MUCHO CUIDADO** esto borra todo archivo y SO que esté en esas particiones
+Si se requiere modificarlos, reiniciar la pc y bootear nuevamente desde el usb, pero en lugar de seleccionar <kbd>install ubuntu</kbd> seleccionar <kbd>Try Ubuntu</kbd>, ya en el escritorio, abre la aplicación `Gparted`y allí puedes modificar los tamaños o incluso eliminar las particiones **MUCHO CUIDADO** esto borra todo archivo y SO que esté en esas particiones
 
 ## Personalizar Ubuntu
 
-Si sos como yo que vengo de windows es posible que te resulte más cómodo tener el dock en la posición inferior en lugar de a la izquierda, además prefiero ver las aplicaciones desagrupadas.
+Si tienes la costumbre de windows es posible que te resulte más cómodo tener el dock en la posición inferior en lugar de a la izquierda, además es posible también visualizar las aplicaciones desagrupadas.
 
-![Ubuntu Personalizado](imagenes/personalizarubuntu.png "Así me gusta el escritorio de ubuntu")
+![Ubuntu Personalizado](imagenes/personalizarubuntu.png "Escritorio de ubuntu personalizado")
 
 ### Dock Abajo
 
@@ -103,20 +103,20 @@ Puedes crear cualquier tipo de archivo `.txt`, `.odt`, `.ods`, etc,.
 
 ## Instalar aplicaciones
 
-Existen muchas maneras de instalar aplicaciones en ubuntu, la mayoría las puedes descargar del `centro de aplicaciones`, otras las podrás descargar como `archivos.deb` e instalarlos o ejecutar directamente `archivos.appimage`
+Existen muchas maneras de instalar aplicaciones en ubuntu, la mayoría se pueden descargar del `centro de aplicaciones`, otras se pueden descargar como `archivos.deb` e instalarlos o ejecutar directamente `archivos.appimage`
 
 ## Instalar Anydesk en Ubuntu
 
 Descargar [instalador.deb](https://anydesk.com/es/downloads/thank-you?dv=deb_64)
 
-Luego abre un terminal: `ctrl`+`alt`+`t` y navega hasta el directorio donde descargaste el instalador
+Luego abrir un terminal: `ctrl`+`alt`+`t` y navegar hasta el directorio donde se descargó el instalador
 
 ```bash
 cd Descargas
 ```
 
-o desde el explorador vas a carpeta `Descargas`, das click derecho -> abrir en un terminal.  
-en el terminal ejecutas
+o desde el explorador ir a la carpeta `Descargas`, click derecho -> abrir en un terminal.  
+En el terminal ejecutar
 
 ```bash
 sudo dpkg -i anydesk_x.x.x-x_amd64.deb
@@ -124,7 +124,107 @@ sudo dpkg -i anydesk_x.x.x-x_amd64.deb
 ```
 
 > [!TIP]  
-> Para no errarle con el nombre del archivo y evitar copiarlo entero, escribe `sudo dpkg -i any` y luego presiona `tab`, esto completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `any` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
+> Para no errarle con el nombre del archivo y evitar copiarlo entero, puedes escribir `sudo dpkg -i any` y luego presionando `tab` se completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `any` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
+
+### Instalar Balena Etcher en Ubuntu
+
+Descargar el Package para Debian y Ubuntu desde [Balena Github release page](https://github.com/balena-io/etcher/releases/)
+(Descargar el .deb)
+
+Instalar con `apt`
+
+```bash
+sudo apt install ./balena-etcher_******_amd64.deb
+```
+
+#### Desinstalar
+
+```bash
+sudo apt remove balena-etcher
+```
+
+#### Recuperar USB de inicio creado con Balena Etcher
+
+Luego de utilizar balena para crear un disco de arranque, recuperar la memoria para usarlo como disco extraíble puede ser todo un desafío porque suelen quedar tablas de particiones raras y no se pueden formatear normalmente, se puede hacer mediante línea de comandos:
+
+>[!WARNING]  
+> Confirmar siempre cuál es el (`/dev/sdX`) antes de correr estos comandos. Un error en la letra puede borrar el disco equivocado.
+
+##### Identificar el dispositivo
+
+```bash
+lsblk
+
+#Ejemplo de salida
+#sda           8:0    1  57,7G  0 disk 
+#└─sda1        8:1    1  57,7G  0 part /media/user/2BEC-CD76
+```
+
+Buscar el USB por el tamaño (ej: 8G, 16G, 32G). Va a aparecer como `/dev/sdb`, `/dev/sdc`, etc.
+
+##### Desmontar todas las particiones del USB
+
+Se desmontan las `particiones`, no el disco entero (`/dev/sda` nunca se monta directamente).
+
+```bash
+sudo umount /dev/sdXn
+```
+
+Donde `X` es la letra del disco (a, b, c...) y `n` el número de partición (1, 2, 3...). Repetir para cada partición que tenga el disco.
+
+```bash
+sudo umount /dev/sda1 # Ojo la letra
+sudo umount /dev/sda2 # Ojo la letra
+```
+
+Si da `no montado`, está bien, seguir con la siguiente.
+
+###### Si alguna partición da "ocupado"
+
+```bash
+sudo lsof | grep /dev/sdX
+sudo fuser -k /dev/sdXn
+```
+
+##### Borrar firmas de filesystem y tabla de particiones
+
+```bash
+sudo wipefs --all /dev/sdX
+```
+
+> [!TIP]
+> Si en este paso o en el siguiente da `Error al abrir /dev/sdX: No se ha encontrado el medio`, es un problema de conexión física: desconectar y reconectar el USB (probar otro puerto) y volver a correr `lsblk` para confirmar que el tamaño ya no figura en 0B.
+
+##### Crear tabla de particiones nueva (MBR)
+
+```bash
+sudo parted /dev/sdX mklabel msdos
+```
+
+> [!TIP]
+> El mensaje `Información: Puede que tenga que actualizar /etc/fstab` es solo informativo, ignorar.
+
+##### Crear la partición
+
+```bash
+sudo parted /dev/sdX mkpart primary fat32 0% 100%
+```
+
+##### Formatear
+
+**FAT32** (máxima compatibilidad, límite de 4GB por archivo):
+
+```bash
+sudo mkfs.vfat -F 32 /dev/sdX1
+```
+
+##### 7. Verificar
+
+```bash
+lsblk -f
+```
+
+Debería verse la partición con el filesystem correcto (`vfat`) y un UUID nuevo.
 
 ### Instalar Brave en Ubuntu
 
@@ -161,14 +261,14 @@ sudo apt install libxcb-cursor0
 
 Descargar el [Instalador.Deb](https://www.google.com/intl/es-419/chrome/dr/download/?brand=FKPE&ds_kid=43700081396058055&gad_source=1&gclid=Cj0KCQiA_NC9BhCkARIsABSnSTZEbVLX87bNF4q2sMf9cHQ_FGu-kCSta00VghCxGE0sMR7gRZfr0XsaAgE4EALw_wcB&gclsrc=aw.ds)
 
-Luego abre un terminal: `ctrl`+`alt`+`t` y navega hasta el directorio donde descargaste el instalador
+Luego abrir un terminal: `ctrl`+`alt`+`t` y navegar hasta el directorio donde se descargó el instalador
 
 ```bash
 cd Descargas
 ```
 
-o desde el explorador vas a carpeta `Descargas`, das click derecho -> abrir en un terminal.  
-en el terminal ejecutas
+O desde el explorador ir a la a carpeta `Descargas`, click derecho -> abrir en un terminal.  
+En el terminal ejecutar
 
 ```bash
 sudo dpkg -i google-chrome-stable_current_amd64.deb 
@@ -176,20 +276,20 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
 > [!TIP]  
-> Para no errarle con el nombre del archivo y evitar copiarlo entero, escribe `sudo dpkg -i goog` y luego presiona `tab`, esto completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `goog` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
+> Para no errarle con el nombre del archivo y evitar copiarlo entero, puedes escribir `sudo dpkg -i goog` y luego presionando `tab` se completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `goog` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
 
 ### Instalar Dropbox en Ubuntu
 
 Descargar el [Instalador.Deb](https://www.dropbox.com/install)
 
-Luego abre un terminal: `ctrl`+`alt`+`t` y navega hasta el directorio donde descargaste el instalador
+Luego abrir un terminal: `ctrl`+`alt`+`t` y navegar hasta el directorio donde se descargó el instalador
 
 ```bash
 cd Descargas
 ```
 
- o desde el explorador vas a carpeta `Descargas`, das click derecho -> abrir en un terminal.  
-en el terminal ejecutas
+O desde el explorador ir a la carpeta `Descargas`, click derecho -> abrir en un terminal.  
+En el terminal ejecutar
 
 ```bash
 sudo dpkg -i Dropbox.deb
@@ -197,7 +297,7 @@ sudo dpkg -i Dropbox.deb
 ```
 
 > [!TIP]  
-> Para no errarle con el nombre del archivo y evitar copiarlo entero, escribe `sudo dpkg -i Drop` y luego presiona `tab`, esto completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `Drop` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
+> Para no errarle con el nombre del archivo y evitar copiarlo entero, puedes escribir `sudo dpkg -i Drop` y luego presionando `tab` se completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `Drop` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
 
 ### Instalar FFmpeg en Ubuntu
 
@@ -411,10 +511,6 @@ sudo apt-get update && sudo apt-get install obs-studio
 * Ver que la salida coincida con el lienzo, sino sale cualquier cosa.
 * Ajustes → Salida → Ver que los videos salgan en “home/{USER}/Videos”
 
-#### Plugin Input Overlay (Teclado en pantalla)
-
-Aún no lo probé [Repositorio](https://github.com/univrsal/input-overlay)
-
 ### Instalar PiImager en Ubuntu
 
 Descargar el [Instalador.Deb](https://www.raspberrypi.com/software/)  
@@ -433,7 +529,7 @@ sudo dpkg -i rpi-imager_x.x.x_ubuntu.deb
 ```
 
 > [!TIP]  
-> Para no errarle con el nombre del archivo y evitar copiarlo entero, escribe `sudo dpkg -i rpi` y luego presiona `tab`, esto completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `rpi` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
+> Para no errarle con el nombre del archivo y evitar copiarlo entero, puedes escribir `sudo dpkg -i rpi` y luego presionando `tab` se completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `rpi` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
 
 ### Instalar Pinta en Ubuntu
 
@@ -484,8 +580,9 @@ En el Celular Activar depuración por USB
 * Ir a Acerca del teléfono
 * Version del S.O. -> click 7 veces para activar modo desarrollador.
 * En sistema -> avanzado -> Depuración por usb -> Activar
-* Algunos móviles requieren también Instalar vía USB y Depuración USB (ajustes de seguridad)
-* Te recomiendo desactivarlo cuando termines
+  * Algunos móviles requieren también Instalar vía USB y
+  * Depuración USB (ajustes de seguridad)
+* `Se recomienda desactivarlo cuando termines`
 
 En un terminal
 
@@ -570,7 +667,7 @@ Abrir aplicaciones al inicio
 ![Aplicaciones de Inicio](imagenes/aplicacionesinicio.png "Aplicaciones al inicio de Ubuntu")
 
 Añadir
-**Nombre:** Synchting  
+**Nombre:** Syncthing  
 **Comando:**
 
 ```bash
@@ -692,7 +789,7 @@ chmod +x Ultimaker-Cura-x.xx.x-linux-X64.AppImage
 # Ajustar nombre de archivo según versión
 ```
 
-Puedes Ejecutar Ultimakercura con doble click sobre el `.appimage`o desde el terminal:
+Se puede Ejecutar UltimakerCura con doble click sobre el `.appimage`o desde el terminal:
 
 ```bash
 ./Cura.AppImage
@@ -732,7 +829,7 @@ sudo dpkg -i virtualbox-x.x_x.x.xx-xxxxxx~Ubuntu~jammy_amd64.deb
 ```
 
 >[!TIP]  
-> Para no errarle con el nombre del archivo y evitar copiarlo entero, escribe `sudo dpkg -i virt` y luego presiona `tab`, esto completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `virt` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
+> Para no errarle con el nombre del archivo y evitar copiarlo entero, puedes escribir `sudo dpkg -i virt` y luego presionando `tab` se completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `virt` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
 
 #### Virtual box troubleshooting
 
@@ -767,14 +864,14 @@ sudo snap install vlc
 
 Puedes instalarla desde la tienda, pero no suele ser la versión más reciente, para esto necesitarás descargar el `instalador.deb` del [sitio oficial](https://code.visualstudio.com/)
 
-Luego abre un terminal: `ctrl`+`alt`+`t` y navega hasta el directorio donde descargaste el instalador
+Luego abrir un terminal: `ctrl`+`alt`+`t` y navegar hasta el directorio donde se descargó el instalador
 
 ```bash
 cd Descargas
 ```
 
-o desde el explorador vas a carpeta `Descargas`, das click derecho -> abrir en un terminal.  
-en el terminal ejecutas
+O desde el explorador ir a la carpeta `Descargas`, click derecho -> abrir en un terminal.  
+En el terminal ejecutar
 
 ```bash
 sudo dpkg -i code_1.xxx.x-xxxxxxxxxx_amd64.deb
@@ -782,7 +879,7 @@ sudo dpkg -i code_1.xxx.x-xxxxxxxxxx_amd64.deb
 ```
 
 >[!TIP]  
-> Para no errarle con el nombre del archivo y evitar copiarlo entero, escribe `sudo dpkg -i code` y luego presiona `tab`, esto completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `code`mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
+> Para no errarle con el nombre del archivo y evitar copiarlo entero, puedes escribir `sudo dpkg -i code` y luego presionando `tab` se completará automáticamente el nombre del archivo, en caso de existir varios que empiecen con `code` mostrará todas las alternativas que existan, basta escribir 2 o 3 letras más y volver a presionar `tab` para que autocomplete.
 
 #### Algunas recomendaciones
 
@@ -804,7 +901,7 @@ escribir `settings`
 y click en `Open User Settings (JSON)`  
 puedes agregar las opciones que deses, mucho ojo con las comas
 
-### Instalar Wiresshark en Ubuntu
+### Instalar WireShark en Ubuntu
 
 En un terminal
 
@@ -1007,7 +1104,7 @@ Buscar un archivo
 find /ruta/de/inicio -name "archivo.txt"
 ```
 
-Recursos del sitema
+Recursos del sistema
 
 ```bash
 htop # Muestra el uso de CPU (discrimina por núcleo) y RAM
