@@ -177,7 +177,7 @@ sudo dpkg -i PAQUETE.deb # Instalar un paquete.deb
 Hacer ejecutable un archivo:
 
 ```bash
-chmod u+x <file> Makes a file executable by its owner.
+chmod u+x ARCHIVO
 ```
 
 Cambiar la propiedad de un archivo o carpeta:
